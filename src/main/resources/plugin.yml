@@ -1,0 +1,19 @@
+name: CommandScheduler
+version: 1.0.0
+main: com.commandscheduler.CommandScheduler
+api-version: '1.20'
+folia-supported: true
+author: YourName
+description: Schedule commands to run at specified intervals
+
+commands:
+  commandscheduler:
+    description: Manage scheduled commands
+    aliases: [cs, scheduler]
+    usage: /<command> <add|remove|list> [args]
+    permission: commandscheduler.admin
+
+permissions:
+  commandscheduler.admin:
+    description: Allows managing scheduled commands
+    default: op
