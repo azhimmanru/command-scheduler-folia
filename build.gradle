@@ -14,25 +14,19 @@ java {
 repositories {
     mavenCentral()
 
-    // Paper / Folia API
     maven {
         url = 'https://repo.papermc.io/repository/maven-public/'
     }
 
-    // FoliaLib repository
     maven {
         url = 'https://repo.tcoded.com/releases'
     }
 }
 
 dependencies {
-    // Paper API (Folia compatible)
     compileOnly 'io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT'
+    compileOnly 'com.tcoded.folialib:folialib:0.3.0'
 
-    // FoliaLib
-    compileOnly 'com.tcoded.folialib:folialib:0.3.2'
-
-    // Lombok (optional, tapi kamu sudah pakai)
     compileOnly 'org.projectlombok:lombok:1.18.30'
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
 }
